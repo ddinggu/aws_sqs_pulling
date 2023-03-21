@@ -1,0 +1,7 @@
+.venv
+venv
+.DS_Store
+.env
+
+# lambda_layer for package
+lambda-python-39-lib

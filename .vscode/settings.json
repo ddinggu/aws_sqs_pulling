@@ -1,0 +1,28 @@
+{
+  "python.formatting.provider": "none",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.lintOnSave": true,
+  "files.associations": {
+    "**/requirements{/**,*}.{txt,in}": "requirements"
+  },
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "prettier.enable": false,
+  "python.analysis.typeCheckingMode": "basic",
+  "sqltools.useNodeRuntime": true,
+  "sqltools.connections": [
+    {
+        "previewLimit": 50,
+        "driver": "SQLite",
+        "name": "sns_test",
+        "database": "${workspaceFolder:SQS}/db.sqlite3"
+    }
+],
+}
